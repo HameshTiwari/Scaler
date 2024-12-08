@@ -48,7 +48,7 @@ abstract public class User {
     }*/
     private final String generateUniqueID(){
         totalUsers++;
-        return "User-"+totalUsers;
+        return "LibraryManagementSystem.User-"+totalUsers;
     }
     public void setContactInfo(String contactInfo) {
         this.contactInfo = contactInfo;
@@ -59,5 +59,6 @@ abstract public class User {
     }
     public abstract void displayDashboard();
     public abstract boolean canBorrowBooks();
+    public abstract void returnBook();
 
 }

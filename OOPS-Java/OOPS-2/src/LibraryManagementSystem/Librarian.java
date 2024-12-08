@@ -1,4 +1,5 @@
 package LibraryManagementSystem;
+
 public class Librarian extends User {
     private String employeeNumber;
     Librarian(String employeeNumber , String name , String contact)
@@ -15,6 +16,11 @@ public class Librarian extends User {
     @Override
     public boolean canBorrowBooks() {
         return true;
+    }
+
+    @Override
+    public void returnBook() {
+        return;
     }
 
     public void addNewBook()
