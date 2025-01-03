@@ -1,3 +1,4 @@
+
 public class Item implements  Comparable<Item>{
     private String ID;
     private String name;
@@ -46,7 +47,14 @@ public class Item implements  Comparable<Item>{
 
     @Override
     public int compareTo(Item other) {
-        return this.name.compareTo(other.name);
+        //return this.name.compareTo(other.name);
+        //return this.price.compareTo(other.price);
+        if(this.price < other.price){
+            return -1;
+        } else if(this.price > other.price){
+            return 1;
+        }
+        return 0;
     }
 
 
